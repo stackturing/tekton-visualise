@@ -1,0 +1,6 @@
+domain: apps.tekton-visualise
+layout:
+- go.kubebuilder.io/v3
+projectName: tekton-visualise
+repo: github.com/stackturing/tekton-visualise
+version: "3"
