@@ -1,0 +1,16 @@
+domain: apps.tekton-visualise
+layout:
+- go.kubebuilder.io/v3
+projectName: tekton-visualise
+repo: github.com/stackturing/tekton-visualise
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: apps.tekton-visualise
+  group: tools
+  kind: TektonVisualiser
+  path: github.com/stackturing/tekton-visualise/api/v1alpha1
+  version: v1alpha1
+version: "3"

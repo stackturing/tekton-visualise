@@ -1,0 +1,6 @@
+apiVersion: tools.apps.tekton-visualise/v1alpha1
+kind: TektonVisualiser
+metadata:
+  name: tektonvisualiser-sample
+spec:
+  # TODO(user): Add fields here
