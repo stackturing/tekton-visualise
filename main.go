@@ -78,11 +78,11 @@ func main() {
 		os.Exit(1)
 	}
 
-	if err = (&controllers.TektonVisualiserReconciler{
+	if err = (&controllers.TektonGraphReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
-		setupLog.Error(err, "unable to create controller", "controller", "TektonVisualiser")
+		setupLog.Error(err, "unable to create controller", "controller", "TektonGraph")
 		os.Exit(1)
 	}
 	//+kubebuilder:scaffold:builder

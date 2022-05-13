@@ -1,13 +1,13 @@
-# permissions for end users to view tektonvisualisers.
+# permissions for end users to view TektonGraphs.
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: tektonvisualiser-viewer-role
+  name: TektonGraph-viewer-role
 rules:
 - apiGroups:
   - tools.apps.tekton-visualise
   resources:
-  - tektonvisualisers
+  - TektonGraphs
   verbs:
   - get
   - list
@@ -15,6 +15,6 @@ rules:
 - apiGroups:
   - tools.apps.tekton-visualise
   resources:
-  - tektonvisualisers/status
+  - TektonGraphs/status
   verbs:
   - get

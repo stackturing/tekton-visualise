@@ -27,26 +27,26 @@ import (
 	toolsv1alpha1 "github.com/stackturing/tekton-visualise/api/v1alpha1"
 )
 
-// TektonVisualiserReconciler reconciles a TektonVisualiser object
-type TektonVisualiserReconciler struct {
+// TektonGraphReconciler reconciles a TektonGraph object
+type TektonGraphReconciler struct {
 	client.Client
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=tektonvisualisers,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=tektonvisualisers/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=tektonvisualisers/finalizers,verbs=update
+//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=TektonGraphs,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=TektonGraphs/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=tools.apps.tekton-visualise,resources=TektonGraphs/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.
 // TODO(user): Modify the Reconcile function to compare the state specified by
-// the TektonVisualiser object against the actual cluster state, and then
+// the TektonGraph object against the actual cluster state, and then
 // perform operations to make the cluster state reflect the state specified by
 // the user.
 //
 // For more details, check Reconcile and its Result here:
 // - https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.11.2/pkg/reconcile
-func (r *TektonVisualiserReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
+func (r *TektonGraphReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	_ = log.FromContext(ctx)
 
 	// TODO(user): your logic here
@@ -55,8 +55,8 @@ func (r *TektonVisualiserReconciler) Reconcile(ctx context.Context, req ctrl.Req
 }
 
 // SetupWithManager sets up the controller with the Manager.
-func (r *TektonVisualiserReconciler) SetupWithManager(mgr ctrl.Manager) error {
+func (r *TektonGraphReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
-		For(&toolsv1alpha1.TektonVisualiser{}).
+		For(&toolsv1alpha1.TektonGraph{}).
 		Complete(r)
 }

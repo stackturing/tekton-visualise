@@ -10,7 +10,7 @@ resources:
   controller: true
   domain: apps.tekton-visualise
   group: tools
-  kind: TektonVisualiser
+  kind: TektonGraph
   path: github.com/stackturing/tekton-visualise/api/v1alpha1
   version: v1alpha1
 version: "3"
