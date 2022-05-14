@@ -23,17 +23,17 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// TektonGraphSpec defines the desired state of TektonGraph
-type TektonGraphSpec struct {
+// GraphSpec defines the desired state of Graph
+type GraphSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of TektonGraph. Edit TektonGraph_types.go to remove/update
+	// Foo is an example field of Graph. Edit graph_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
 }
 
-// TektonGraphStatus defines the observed state of TektonGraph
-type TektonGraphStatus struct {
+// GraphStatus defines the observed state of Graph
+type GraphStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 }
@@ -41,24 +41,24 @@ type TektonGraphStatus struct {
 //+kubebuilder:object:root=true
 //+kubebuilder:subresource:status
 
-// TektonGraph is the Schema for the TektonGraphs API
-type TektonGraph struct {
+// Graph is the Schema for the graphs API
+type Graph struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   TektonGraphSpec   `json:"spec,omitempty"`
-	Status TektonGraphStatus `json:"status,omitempty"`
+	Spec   GraphSpec   `json:"spec,omitempty"`
+	Status GraphStatus `json:"status,omitempty"`
 }
 
 //+kubebuilder:object:root=true
 
-// TektonGraphList contains a list of TektonGraph
-type TektonGraphList struct {
+// GraphList contains a list of Graph
+type GraphList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []TektonGraph `json:"items"`
+	Items           []Graph `json:"items"`
 }
 
 func init() {
-	SchemeBuilder.Register(&TektonGraph{}, &TektonGraphList{})
+	SchemeBuilder.Register(&Graph{}, &GraphList{})
 }
