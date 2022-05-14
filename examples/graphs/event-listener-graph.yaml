@@ -6,9 +6,9 @@ metadata:
 spec:
   resource: 
   - kind: EventListeners
-    name: event-listener-name-01
+    name: event-listener-name
     connections: 
       - kind: Triggers
         resources: 
-        - trigger-01
-        - trigger-02
+        - name: trigger-01
+        - name: trigger-02

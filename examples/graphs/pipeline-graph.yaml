@@ -10,10 +10,13 @@ spec:
     connections: 
       - kind: Task
         resources: 
-        - task-01
-        - task-02
+        - name: task-01
+          status: available
+        - name: task-02
+          status: unavailable
       - kind: ClusterTask
         resources: 
-        - cluster-task-01
-        - cluster-task-02
-
+        - name: cluster-task-01
+          status: available
+        - name: cluster-task-02
+          status: unavailable

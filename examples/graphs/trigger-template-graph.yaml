@@ -1,7 +1,7 @@
 api: tekton.visualise/v1alpha1
 kind: Graph
 metadata: 
-  name: triggers-graph
+  name: trigger-template-graph
   namespace: {{namespace}}
 spec:
   resource: 
@@ -10,13 +10,19 @@ spec:
     connections: 
       - kind: Task
         resources: 
-        - task-01
-        - task-02
+        - name: task-01
+          status: available
+        - name: task-02
+          status: unavailable
       - kind: ClusterTask
         resources: 
-        - cluster-task-01
-        - cluster-task-02
+        - name: cluster-task-01
+          status: available
+        - name: cluster-task-02
+          status: unavailable
       - kind: Pipeline
         resources: 
-        - pipeline-01
-        - pipeline-02
+        - name: pipeline-01
+          status: unavailable
+        - name: pipeline-02
+          status: available
