@@ -1,0 +1,6 @@
+apiVersion: tekton.visualise.tekton.visualise/v1alpha1
+kind: Graph
+metadata:
+  name: graph-sample
+spec:
+  # TODO(user): Add fields here
