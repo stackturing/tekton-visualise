@@ -1,0 +1,22 @@
+api: tekton.visualise/v1alpha1
+kind: Graph
+metadata: 
+  name: triggers-graph
+  namespace: {{namespace}}
+spec:
+  resource: 
+  - kind: TriggerTemplate
+    name: trigger-template-name
+    connections: 
+      - kind: Task
+        resources: 
+        - task-01
+        - task-02
+      - kind: ClusterTask
+        resources: 
+        - cluster-task-01
+        - cluster-task-02
+      - kind: Pipeline
+        resources: 
+        - pipeline-01
+        - pipeline-02
