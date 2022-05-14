@@ -23,11 +23,15 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Versions (please complete the following information):**
- - Kubernetes Version: 
- -  Tekton Pipelines Version: 
- -  Tekton Triggers Version:
- -  Tekton Visualiser Version:
-
 **Additional context**
 Add any other context about the problem here.
+
+**Versions**
+<details>
+  </br>
+
+  - Kubernetes Version: 
+  - Tekton Pipelines Version: 
+  - Tekton Triggers Version:
+  - Tekton Visualiser Version:
+</details>
