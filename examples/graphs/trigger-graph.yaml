@@ -1,7 +1,7 @@
 api: tekton.visualise/v1alpha1
 kind: Graph
 metadata: 
-  name: pipeline-graph
+  name: trigger-graph
   namespace: {{namespace}}
 spec:
   resource: 
@@ -10,8 +10,11 @@ spec:
     connections: 
       - kind: TriggerBinding
         resources: 
-        - trigger-binding-01
-        - trigger-binding-02
+        - name: trigger-binding-01
+          status: available
+        - name: trigger-binding-02
+          status: unavailable
       - kind: TriggerTemplate
         resources: 
-        - trigger-template
+        - name: trigger-template
+          status: available
