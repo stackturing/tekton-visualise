@@ -9,10 +9,10 @@ body:
      label: Docs Issue Type
      description: What kind of revision do the docs need?
      options:
-        - Missing Information
-        - Incomplete Information
-        - Incorrect Information
-        - Lacks clarity
+      - Missing Information
+      - Incomplete Information
+      - Incorrect Information
+      - Lacks clarity
   validations:
     required: true
 - type: textarea
