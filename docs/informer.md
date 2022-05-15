@@ -1,7 +1,7 @@
 # Informers
 
 Informs for events on namespace and cluster for specific resources.
-Check core informers available [here](#references)[] to be used to create 
+Check core informers available [here<sup>1</sup>](#references) to be used to create 
 ## Tasks Informer
 Intercept all events for Tekton Tasks.
 
