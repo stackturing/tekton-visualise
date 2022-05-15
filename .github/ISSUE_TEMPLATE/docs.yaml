@@ -3,7 +3,7 @@ description: Create a report to help us improve our documentation
 title: ":book: [DOCS]: "
 labels: ['kind/docs']
 body:
- - type: dropdown
+- type: dropdown
    id: type
    attributes:
      label: Docs Issue Type
