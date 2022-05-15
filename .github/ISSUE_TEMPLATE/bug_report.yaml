@@ -36,19 +36,19 @@ body:
   validations:
     required: true
 - type: input
-  id: kubernetes-version
+  id: tekton-pipelines-version
   attributes:
     label: Tekton Pipelines Version
   validations:
     required: true
 - type: input
-  id: kubernetes-version
+  id: tekton-triggers-version
   attributes:
     label: Tekton Triggers Version
   validations:
     required: true
 - type: input
-  id: kubernetes-version
+  id: tekton-visualiser-version
   attributes:
     label: Tekton Visualiser Version
   validations:
