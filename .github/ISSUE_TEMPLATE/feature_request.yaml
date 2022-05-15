@@ -28,7 +28,7 @@ body:
   id: additional-info
   attributes:
     label: Additonal Context and Screenshots
-    description: Add any other context or add screenshots to help explain your suggestion (if applicable).
+    placeholder: Add any other context or add screenshots to help explain your suggestion (if applicable).
   validations:
     required: false
 - type: checkboxes
