@@ -29,15 +29,28 @@ body:
       4. See error
   validations:
     required: true
-- type: textarea
-  id: version
+- type: input
+  id: kubernetes-version
   attributes:
-    label: Versions
-    placeholder: |
-      - Kubernetes Version:
-      - Tekton Pipelines Version:
-      - Tekton Triggers Version:
-      - Tekton Visualiser Version:
+    label: Kubernetes Version
+  validations:
+    required: true
+- type: input
+  id: kubernetes-version
+  attributes:
+    label: Tekton Pipelines Version
+  validations:
+    required: true
+- type: input
+  id: kubernetes-version
+  attributes:
+    label: Tekton Triggers Version
+  validations:
+    required: true
+- type: input
+  id: kubernetes-version
+  attributes:
+    label: Tekton Visualiser Version
   validations:
     required: true
 - type: textarea
@@ -54,13 +67,3 @@ body:
     options:
     - label: I have searched the existing issues
       required: true
-      
-      
- 
-
-
-
----
-
-
-
