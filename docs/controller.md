@@ -6,7 +6,7 @@ Controls to ensure that `Graph` resources are always in sync with the cluster st
 
 ### Process Events
 1. Filter Connections for relevant resources.
-2. Check resource availability in namespace/cluster.
+2. Check connected resource availability in namespace/cluster.
 
 ### Add/Update/Delete Graph 
 > [Examples](../examples/graphs/)
