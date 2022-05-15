@@ -6,9 +6,9 @@ Reads Graph Resources.
 ### Create Views
 Processes Graph Resources to render views.
 
-#### Consolidated
+**1. Consolidated:**
 Renders consolidated view for a namespace for `Graph` resources.
 
-#### Resource Level
+**2. Resource Level:**
 Renders resource level view for a namespace for `Graph` resources.
 Should be available through clickable blocks on Consolidated view.
