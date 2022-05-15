@@ -13,8 +13,8 @@ body:
      - Incomplete Information
      - Incorrect Information
      - Lacks clarity
-    validations:
-      required: true
+  validations:
+    required: true
 - type: textarea
   id: expected
   attributes:
