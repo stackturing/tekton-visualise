@@ -19,10 +19,10 @@ Closes # .
 
 **Screenshots (if appropriate):**
 
-**Expand Checklist**
+**Checklist**
 <details>
   </br>
-  
+
   - [ ] I have performed a self-review of my code
   - [ ] I believe the implementation in my PR solves the described issue completely
   - [ ] I have written relevant tests as a part of my PR
