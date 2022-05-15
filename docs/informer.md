@@ -2,22 +2,23 @@
 
 Informs for events on namespace and cluster for specific resources.
 Check core informers available [here<sup>1</sup>](#references) to be used to create 
-### Tasks Informer
+
+**1. Tasks Informer:**
 Intercept all events for Tekton Tasks.
 
-### ClusterTasks Informer
+**2. ClusterTasks Informer:**
 Intercept all events for Tekton Cluster Tasks.
 
-### Pipeline Informer
+**3. Pipeline Informer:**
 Intercepts all events for Tekton Pipelines.
 
-### Trigger Template Informer
+**4. Trigger Template Informer:**
 Intercepts all events for Tekton Trigger Templates.
 
-### Trigger Bindings Informer
+**5. Trigger Bindings Informer:**
 Intercept all events for Tekton Trigger Bindings.
 
-### Event Listener Informer
+**6. Event Listener Informer:**
 Intercepts all events for Tekton Event Listeners.
 
 ### References: 
