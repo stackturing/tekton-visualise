@@ -30,7 +30,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	toolsv1alpha1 "github.com/stackturing/tekton-visualise/api/v1alpha1"
+	tektonvisualisev1alpha1 "github.com/stackturing/tekton-visualise/api/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -64,7 +64,7 @@ var _ = BeforeSuite(func() {
 	Expect(err).NotTo(HaveOccurred())
 	Expect(cfg).NotTo(BeNil())
 
-	err = toolsv1alpha1.AddToScheme(scheme.Scheme)
+	err = tektonvisualisev1alpha1.AddToScheme(scheme.Scheme)
 	Expect(err).NotTo(HaveOccurred())
 
 	//+kubebuilder:scaffold:scheme

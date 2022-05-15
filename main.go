@@ -31,7 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	toolsv1alpha1 "github.com/stackturing/tekton-visualise/api/v1alpha1"
+	tektonvisualisev1alpha1 "github.com/stackturing/tekton-visualise/api/v1alpha1"
 	"github.com/stackturing/tekton-visualise/controllers"
 	//+kubebuilder:scaffold:imports
 )
@@ -44,7 +44,7 @@ var (
 func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
-	utilruntime.Must(toolsv1alpha1.AddToScheme(scheme))
+	utilruntime.Must(tektonvisualisev1alpha1.AddToScheme(scheme))
 	//+kubebuilder:scaffold:scheme
 }
 
@@ -71,18 +71,18 @@ func main() {
 		Port:                   9443,
 		HealthProbeBindAddress: probeAddr,
 		LeaderElection:         enableLeaderElection,
-		LeaderElectionID:       "ef15c167.apps.tekton-visualise",
+		LeaderElectionID:       "ef15c167.tekton.visualise",
 	})
 	if err != nil {
 		setupLog.Error(err, "unable to start manager")
 		os.Exit(1)
 	}
 
-	if err = (&controllers.TektonVisualiserReconciler{
+	if err = (&controllers.GraphReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {
-		setupLog.Error(err, "unable to create controller", "controller", "TektonVisualiser")
+		setupLog.Error(err, "unable to create controller", "controller", "Graph")
 		os.Exit(1)
 	}
 	//+kubebuilder:scaffold:builder

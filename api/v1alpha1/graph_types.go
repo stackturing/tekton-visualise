@@ -23,17 +23,17 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// TektonVisualiserSpec defines the desired state of TektonVisualiser
-type TektonVisualiserSpec struct {
+// GraphSpec defines the desired state of Graph
+type GraphSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of TektonVisualiser. Edit tektonvisualiser_types.go to remove/update
+	// Foo is an example field of Graph. Edit graph_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
 }
 
-// TektonVisualiserStatus defines the observed state of TektonVisualiser
-type TektonVisualiserStatus struct {
+// GraphStatus defines the observed state of Graph
+type GraphStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 }
@@ -41,24 +41,24 @@ type TektonVisualiserStatus struct {
 //+kubebuilder:object:root=true
 //+kubebuilder:subresource:status
 
-// TektonVisualiser is the Schema for the tektonvisualisers API
-type TektonVisualiser struct {
+// Graph is the Schema for the graphs API
+type Graph struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   TektonVisualiserSpec   `json:"spec,omitempty"`
-	Status TektonVisualiserStatus `json:"status,omitempty"`
+	Spec   GraphSpec   `json:"spec,omitempty"`
+	Status GraphStatus `json:"status,omitempty"`
 }
 
 //+kubebuilder:object:root=true
 
-// TektonVisualiserList contains a list of TektonVisualiser
-type TektonVisualiserList struct {
+// GraphList contains a list of Graph
+type GraphList struct {
 	metav1.TypeMeta `json:",inline"`
 	metav1.ListMeta `json:"metadata,omitempty"`
-	Items           []TektonVisualiser `json:"items"`
+	Items           []Graph `json:"items"`
 }
 
 func init() {
-	SchemeBuilder.Register(&TektonVisualiser{}, &TektonVisualiserList{})
+	SchemeBuilder.Register(&Graph{}, &GraphList{})
 }
