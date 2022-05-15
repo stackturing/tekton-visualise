@@ -19,7 +19,7 @@ Closes # .
 
 **Screenshots (if appropriate):**
 
-**Expand Checklist**
+**Checklist**
 <details>
   </br>
 
