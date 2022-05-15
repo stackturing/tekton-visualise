@@ -1,6 +1,6 @@
 # Tekton Visualise 
 
-[Basic Design](assets/design_doc.svg)
+![Basic Design](assets/design_doc.svg)
 
 ## Design Documentation
 Controller Design Docs: [controller.md](./controller.md)
