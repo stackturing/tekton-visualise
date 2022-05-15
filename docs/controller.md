@@ -9,7 +9,7 @@ Controls to ensure that `Graph` resources are always in sync with the cluster st
 2. Check resource availability in namespace/cluster.
 
 ## Add/Update/Delete Graph 
-> (Examples)[!../examples/graphs/]
+> [Examples](../examples/graphs/)
 1. Add/Update/Delete `tekton.visualise/v1alpha1/Graph` resources.
 
 #### References:
