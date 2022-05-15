@@ -4,17 +4,17 @@ title: ":book: [DOCS]: "
 labels: ['kind/docs']
 body:
 - type: dropdown
- id: type
- attributes:
-   label: Docs Issue Type
-   description: What kind of revision do the docs need?
-   options:
-    - Missing Information
-    - Incomplete Information
-    - Incorrect Information
-    - Lacks clarity
-   validations:
-     required: true
+  id: type
+  attributes:
+    label: Docs Issue Type
+    description: What kind of revision do the docs need?
+    options:
+     - Missing Information
+     - Incomplete Information
+     - Incorrect Information
+     - Lacks clarity
+    validations:
+      required: true
 - type: textarea
   id: expected
   attributes:
