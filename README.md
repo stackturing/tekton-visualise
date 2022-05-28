@@ -7,5 +7,3 @@ Documentation and Debugging tool that represents state of all tekton resources i
 - [Code of Conduct](https://github.com/stackturing/template/blob/main/.github/SUPPORT.md)
 - [Support](https://github.com/stackturing/template/blob/main/.github/SUPPORT.md)
 - [License](https://github.com/stackturing/template/blob/main/LICENSE)
-=======
-A tool for visualising tekton resources within a cluster
