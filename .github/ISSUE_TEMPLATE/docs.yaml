@@ -1,0 +1,38 @@
+name: Docs
+description: Create a report to help us improve our documentation
+title: ":book: [DOCS]: "
+labels: ['kind/docs']
+body:
+- type: dropdown
+  id: type
+  attributes:
+    label: Docs Issue Type
+    description: What kind of revision do the docs need?
+    options:
+     - Missing Information
+     - Incomplete Information
+     - Incorrect Information
+     - Lacks clarity
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Describe your issue
+    placeholder: A concise description of what you expected documentation to look like.
+  validations:
+    required: true
+- type: textarea
+  id: additional-info
+  attributes:
+    label: Additonal Context and Screenshots
+    placeholder: Add any other context about the problem here or add screenshots to help explain your problem (if applicable).
+  validations:
+    required: false
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
