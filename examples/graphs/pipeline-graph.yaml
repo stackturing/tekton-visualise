@@ -1,0 +1,22 @@
+api: tekton.visualise/v1alpha1
+kind: Graph
+metadata: 
+  name: pipeline-graph
+  namespace: {{namespace}}
+spec:
+  resource: 
+  - kind: Pipelines
+    name: pipeline-name
+    connections: 
+      - kind: Task
+        resources: 
+        - name: task-01
+          status: available
+        - name: task-02
+          status: unavailable
+      - kind: ClusterTask
+        resources: 
+        - name: cluster-task-01
+          status: available
+        - name: cluster-task-02
+          status: unavailable
